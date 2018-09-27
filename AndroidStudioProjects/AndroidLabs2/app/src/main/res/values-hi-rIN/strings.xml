@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AndroidLabs</string>
-    <string name="hello_message">kida!</string>
-    <string name="ButtonText">mein button hoon</string>
-    <string name="Lab_number">Lab1</string>
+    <string name="app_name">एंड्रॉइड लैब्स</string>
+    <string name="hello_message">नमस्ते दुनिया!</string>
+    <string name="ButtonText">मैं एक बटन हूँ!</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="login_hint">नाम</string>
+    <string name="password">पारण शब्द</string>
+    <string name="password_hint">पारण शब्द</string>
+    <string name="LoginFlagDesc">झंडा</string>
+    <string name="ListActivitySwitch">यह क्या करता है</string>
+    <string name="dialog_title">क्या आपको यकीन है?</string>
+    <string name="dialog_message">क्या बाहर जाना चाहते हो?</string>
+    <string name="ok">ठीक</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="check">चेकबॉक्स</string>
+    <string name="radio">रेडियो बटन</string>
 </resources>
