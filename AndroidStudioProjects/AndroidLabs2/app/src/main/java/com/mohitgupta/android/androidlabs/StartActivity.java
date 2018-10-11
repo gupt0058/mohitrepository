@@ -13,13 +13,24 @@ public class StartActivity extends Activity {
     private static String ACTIVITY_NAME = "StartActivity";
 
     private Button button;
-
+    private Button startchat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         Log.i(ACTIVITY_NAME, "In onCreate()");
 
+
+
+        startchat = findViewById(R.id.startChat);
+        startchat.setOnClickListener(new View.OnClickListener() {
+                                      @Override
+                                      public void onClick(View v) {
+                                          Log.i(ACTIVITY_NAME, "User Clicked Start Chat");
+
+                                          startActivityForResult(new Intent(StartActivity.this, ChatWindow.class), 00);
+                                      }
+                                  });
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,10 +73,8 @@ public class StartActivity extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int responseCode, Intent data){
-        if(requestCode == 50){
+        if(requestCode == 50 && responseCode == Activity.RESULT_OK){
             Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult");
-        }
-        if(responseCode == Activity.RESULT_OK){
             Toast.makeText(this , data.getStringExtra("Response"), Toast.LENGTH_LONG).show();
         }
     }

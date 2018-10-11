@@ -15,4 +15,9 @@
     <string name="cancel">रद्द करना</string>
     <string name="check">चेकबॉक्स</string>
     <string name="radio">रेडियो बटन</string>
+    <string name="startChat">बातचीत शुरू कीजिए</string>>
+    <string name="send">भेजना</string>
+    <string name="chat_hint">चैट करने के लिए टाइप करें</string>
+    <string name="newText">नया पाठ</string>
+    <string name="contentDescript">चित्र</string>
 </resources>
