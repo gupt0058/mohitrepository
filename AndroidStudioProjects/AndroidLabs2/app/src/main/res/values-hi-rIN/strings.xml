@@ -20,4 +20,5 @@
     <string name="chat_hint">चैट करने के लिए टाइप करें</string>
     <string name="newText">नया पाठ</string>
     <string name="contentDescript">चित्र</string>
+    <string name="weatherForecast">मौसम पूर्वानुमान</string>
 </resources>

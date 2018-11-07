@@ -14,6 +14,7 @@ public class StartActivity extends Activity {
 
     private Button button;
     private Button startchat;
+    private Button weatherforecast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,15 @@ public class StartActivity extends Activity {
                                           startActivityForResult(new Intent(StartActivity.this, ChatWindow.class), 00);
                                       }
                                   });
+        weatherforecast=findViewById(R.id.weatherForecast);
+        weatherforecast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User Clicked  Weather Forecast Button");
+                startActivityForResult(new Intent(StartActivity.this, WeatherForecast.class), 00);
+            }
+        });
+
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
